@@ -73,7 +73,7 @@ Meteor.methods
 	adminCheckAdmin: ->
 		check arguments, [Match.Any]
 		user = Meteor.users.findOne(_id:this.userId)
-		if this.userId and !Roles.userIsInRole(this.userId, ['admin']) and (user.emails.length > 0)
+		if this.userId and !Roles.userIsInRole(this.userId, ['admin']) and (user.emails)
 			email = user.emails[0].address
 			if typeof Meteor.settings.adminEmails != 'undefined'
 				adminEmails = Meteor.settings.adminEmails
