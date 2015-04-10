@@ -1,8 +1,8 @@
 Package.describe({
-  name: "chroma:admin",
+  name: "adamwong246:admin",
   summary: "A complete admin dashboard solution",
   version: "1.1.0",
-  git: "https://github.com/ChromaPDX/meteor-admin.git"
+  git: "https://github.com/adamwong246/meteor-admin.git/meteor-admin.git"
 });
 
 Package.on_use(function(api){
